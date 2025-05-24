@@ -5,4 +5,9 @@ test.describe('Home Pag', () => {
         await page.goto('https://practice.sdetunicorns.com/');
         await expect(page).toHaveTitle('Practice E-Commerce Site – SDET Unicorns');
     })
+
+    test('', async ({ page })=> {
+        await page.goto('https://practice.sdetunicorns.com/about/');
+        await expect(page).toHaveTitle('About – Practice E-Commerce Site');
+    })
 })
